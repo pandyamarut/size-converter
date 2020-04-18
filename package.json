@@ -1,5 +1,5 @@
 {
-  "name": "size-converter",
+  "name": "convert-data-size",
   "version": "1.0.0",
   "description": "a convert default data size into Bytes, KB, MB, GB, TB.",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/pandyamarut/size-converter.git"
   },
   "author": "Marut Pandya",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pandyamarut/size-converter/issues"
   },
