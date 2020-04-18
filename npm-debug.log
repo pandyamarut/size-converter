@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/user/.nvm/versions/node/v6.17.1/bin/node',
+1 verbose cli   '/home/user/.nvm/versions/node/v6.17.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.17.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/user/size-converter',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/user/.npm/convert-data-size/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/user/.npm correctMkdir not in flight; initializing
+10 info lifecycle convert-data-size@1.0.0~prepublish: convert-data-size@1.0.0
+11 silly lifecycle convert-data-size@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/user/.npm/convert-data-size/1.0.0/package.tgz',
+12 verbose tar pack   '/home/user/size-converter' ]
+13 verbose tarball /home/user/.npm/convert-data-size/1.0.0/package.tgz
+14 verbose folder /home/user/size-converter
+15 verbose addLocalTarball adding from inside cache /home/user/.npm/convert-data-size/1.0.0/package.tgz
+16 verbose correctMkdir /home/user/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd convert-data-size@1.0.0
+18 verbose afterAdd /home/user/.npm/convert-data-size/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/user/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/user/.npm/convert-data-size/1.0.0/package/package.json written
+21 silly publish { name: 'convert-data-size',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'a convert default data size into Bytes, KB, MB, GB, TB.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/pandyamarut/size-converter.git' },
+21 silly publish   author: { name: 'Marut Pandya' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/pandyamarut/size-converter/issues' },
+21 silly publish   homepage: 'https://github.com/pandyamarut/size-converter#readme',
+21 silly publish   readme: '# size-converter\nA size converter package which converts bytes, KB, MB, GB. \n\n# Install \n$ npm i convert-data-size\n\n# How to use \nInstall the package using above command. \n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'bdb381bd4fa6a27a02bc79eb4dd6e4ef0d74d399',
+21 silly publish   _id: 'convert-data-size@1.0.0',
+21 silly publish   _shasum: '6be81af1797c839b5e3f44f8be4aad65f9dcffb5',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name convert-data-size
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'convert-data-size',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'convert-data-size',
+26 silly mapToRegistry   name: 'convert-data-size',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/convert-data-size
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/user/.npm/convert-data-size/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/convert-data-size
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:11:20 PM
+33 verbose request using bearer token for auth
+34 verbose request id 962fb36ed4a858d0
+35 http request PUT https://registry.npmjs.org/convert-data-size
+36 http 403 https://registry.npmjs.org/convert-data-size
+37 verbose headers { date: 'Sat, 18 Apr 2020 08:41:22 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'transfer-encoding': 'chunked',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=d194ca5a355bca53d13d9c6bc1ccd2cf61587199280; expires=Mon, 18-May-20 08:41:20 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+37 verbose headers   'cf-ray': '585d16114aa8e33e-CCU',
+37 verbose headers   'cf-cache-status': 'DYNAMIC',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'Accept-Encoding',
+37 verbose headers   server: 'cloudflare',
+37 verbose headers   'content-encoding': 'gzip',
+37 verbose headers   'cf-request-id': '022e0c1ecd0000e33ef5822200000001' }
+38 verbose request invalidating /home/user/.npm/registry.npmjs.org/convert-data-size on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published versions: 1.0.0. : convert-data-size
+40 verbose stack     at makeError (/home/user/.nvm/versions/node/v6.17.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/home/user/.nvm/versions/node/v6.17.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at /home/user/.nvm/versions/node/v6.17.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:216:7
+40 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+40 verbose stack     at emitNone (events.js:91:20)
+40 verbose stack     at Gunzip.emit (events.js:185:7)
+40 verbose stack     at endReadableNT (_stream_readable.js:978:12)
+40 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+40 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+41 verbose statusCode 403
+42 verbose pkgid convert-data-size
+43 verbose cwd /home/user/size-converter
+44 error Linux 4.15.0-91-generic
+45 error argv "/home/user/.nvm/versions/node/v6.17.1/bin/node" "/home/user/.nvm/versions/node/v6.17.1/bin/npm" "publish"
+46 error node v6.17.1
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published versions: 1.0.0. : convert-data-size
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
